@@ -11,6 +11,15 @@ One could use a `CREATE2` factory that deterministically deploys contracts to an
 
 A `CREATE3` factory offers the best solution: the address of the deployed contract is determined by only the deployer address and the salt. This makes it far easier to deploy contracts to multiple chains at the same addresses.
 
+## Our Deployments
+
+We have deployed CREATE3Factory using CREATE2 for deterministic addresses across multiple chains:
+
+- **Base**: CREATE3Factory at `0x7B9e9BE124C5A0E239E04fDC93b66ead4e8C669d` (verified)
+- **Etherlink**: CREATE3Factory at `0x7B9e9BE124C5A0E239E04fDC93b66ead4e8C669d` (verified)
+
+*Note: These deployments use CREATE2 to ensure deterministic addresses across chains.*
+
 ## Deployments
 
 `CREATE3Factory` has been deployed to `0x9fBB3DF7C40Da2e5A0dE984fFE2CCB7C47cd0ABf` on the following networks:

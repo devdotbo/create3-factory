@@ -9,6 +9,7 @@ base = "${RPC_URL_BASE}"
 base_sepolia = "${RPC_URL_BASE_SEPOLIA}"
 blast = "${RPC_URL_BLAST}"
 bsc = "${RPC_URL_BSC}"
+etherlink = "${RPC_URL_ETHERLINK}"
 fantom = "${RPC_URL_FANTOM}"
 gnosis = "${RPC_URL_GNOSIS}"
 goerli = "${RPC_URL_GOERLI}"
@@ -27,6 +28,7 @@ avalanche = {key = "${SNOWTRACE_KEY}", url = "https://api.snowtrace.io/api"}
 base = {key = "${BASESCAN_KEY}", url = "https://api.basescan.org/api"}
 blast = {key = "${BLASTSCAN_KEY}", url = "https://api.blastscan.io/api"}
 bsc = {key = "${BSCSCAN_KEY}", url = "https://api.bscscan.com/api"}
+etherlink = {key = "${ETHERLINK_API_KEY}", url = "https://explorer.etherlink.com/api"}
 fantom = {key = "${FTMSCAN_KEY}", url = "https://api.ftmscan.com/api"}
 gnosis = {key = "${GNOSISSCAN_KEY}", url = "https://api.gnosisscan.io/api"}
 goerli = {key = "${ETHERSCAN_KEY}", url = "https://api-goerli.etherscan.io/api"}
