@@ -20,7 +20,18 @@ We have deployed CREATE3Factory using CREATE2 for deterministic addresses across
 
 *Note: These deployments use CREATE2 to ensure deterministic addresses across chains.*
 
-## Deployments
+### EVM Version Configuration
+
+**IMPORTANT**: Use `evm_version = 'cancun'` in your `foundry.toml` for compatibility with Base and Etherlink.
+
+```toml
+[profile.default]
+evm_version = 'cancun'
+```
+
+This ensures your contracts compile with the correct opcodes for modern L2 chains. See `EVM_VERSION_GUIDE.md` for detailed troubleshooting.
+
+## Original Deployments
 
 `CREATE3Factory` has been deployed to `0x9fBB3DF7C40Da2e5A0dE984fFE2CCB7C47cd0ABf` on the following networks:
 
