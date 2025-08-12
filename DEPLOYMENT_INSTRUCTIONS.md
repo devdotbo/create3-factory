@@ -1,12 +1,12 @@
 # CREATE3 Factory Deployment Instructions
 
 ## Factory Address
-**Base & Etherlink**: `0x7B9e9BE124C5A0E239E04fDC93b66ead4e8C669d`
+**Base, Etherlink & Optimism**: `0x7B9e9BE124C5A0E239E04fDC93b66ead4e8C669d`
 
 ## Deployment Steps
 
 ### 1. Basic Usage
-Deploy contracts with identical addresses on Base and Etherlink:
+Deploy contracts with identical addresses on Base, Etherlink, and Optimism:
 
 ```solidity
 // Deploy.s.sol
@@ -28,7 +28,7 @@ contract DeployScript is Script {
         // Your contract bytecode
         bytes memory bytecode = type(YourContract).creationCode;
         
-        // Deploy (same address on Base and Etherlink)
+        // Deploy (same address on Base, Etherlink, and Optimism)
         ICREATE3Factory(CREATE3_FACTORY).deploy(salt, bytecode);
         
         // Get deployed address
@@ -46,6 +46,9 @@ forge script script/Deploy.s.sol --rpc-url $BASE_RPC_URL --broadcast
 
 # Etherlink
 forge script script/Deploy.s.sol --rpc-url $ETHERLINK_RPC_URL --broadcast
+
+# Optimism
+forge script script/Deploy.s.sol --rpc-url $OPTIMISM_RPC_URL --broadcast
 ```
 
 ### 3. Best Practices
@@ -56,3 +59,4 @@ forge script script/Deploy.s.sol --rpc-url $ETHERLINK_RPC_URL --broadcast
 ## RPC Endpoints
 - **Base**: `https://mainnet.base.org`
 - **Etherlink**: `https://node.mainnet.etherlink.com`
+- **Optimism**: `https://mainnet.optimism.io`

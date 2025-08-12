@@ -17,6 +17,7 @@ We have deployed CREATE3Factory using CREATE2 for deterministic addresses across
 
 - **Base**: CREATE3Factory at `0x7B9e9BE124C5A0E239E04fDC93b66ead4e8C669d` (verified)
 - **Etherlink**: CREATE3Factory at `0x7B9e9BE124C5A0E239E04fDC93b66ead4e8C669d` (verified)
+- **Optimism**: CREATE3Factory at `0x7B9e9BE124C5A0E239E04fDC93b66ead4e8C669d` (verified)
 
 *Note: These deployments use CREATE2 to ensure deterministic addresses across chains.*
 
